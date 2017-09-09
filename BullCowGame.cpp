@@ -19,10 +19,13 @@ int main()
 		GetGuessAndPrintBack();
 		cout << endl;
 	}
+
+	return 0;
 }
 
-//introduce the game
-void PrintIntro() {
+//introducing the game
+void PrintIntro() 
+{
 	const int WORD_LENGTH = 5;
 	cout << "Welcome to Bulls and Cows, a fun word game.\n";
 	cout << "Can you guess the " << WORD_LENGTH;
@@ -32,7 +35,8 @@ void PrintIntro() {
 }
 
 //get the guess of the user
-string GetGuessAndPrintBack() {
+string GetGuessAndPrintBack() 
+{
 	cout << "Enter your guess: ";
 	string Guess = "";
 	getline(cin, Guess);
